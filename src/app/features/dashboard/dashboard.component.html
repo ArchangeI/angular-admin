@@ -1,1 +1,15 @@
-<p>dashboard works!</p>
+<p><strong>Current date:</strong> {{ currentDate }}</p>
+<br>
+
+<p>Initial array: {{ initialNames }}</p>
+<p>Array copied by value: {{ copiedByValueNames }}</p>
+<p>Array copied by reference: {{ copiedByReferenceNames }}</p>
+<br>
+
+<p>Includes symbol "m": 
+    <span *ngFor="let isSymbolExist of isSymbolExistInItems" 
+    [ngClass]="{red:!isSymbolExist}">{{ isSymbolExist }}, </span>
+</p>
+<br>
+
+<p>Array after replace "am" and trim: {{ replacedAndTrimmedArray }}</p>
