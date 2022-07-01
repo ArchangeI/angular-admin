@@ -3,12 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BreadcrumbsComponent } from './shared/components/breadcrumbs/breadcrumbs/breadcrumbs.component';
+import { BreadcrumbsComponent } from './shared/components/breadcrumbs/breadcrumbs.component';
+import { DashboardComponent } from "./features/dashboard/dashboard.component";
 
 @NgModule({
   declarations: [
     AppComponent,
-    BreadcrumbsComponent
+    BreadcrumbsComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
